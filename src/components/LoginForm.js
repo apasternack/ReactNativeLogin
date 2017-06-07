@@ -7,7 +7,6 @@ class LoginForm extends Component {
         return (
             <Card>
                 <CardSection />
-
                 <CardSection />
 
                 <CardSection>
@@ -15,7 +14,6 @@ class LoginForm extends Component {
                         Log in
                     </Button>
                 </CardSection>
-
             </Card>
         );
     }
