@@ -34,7 +34,7 @@ class App extends Component {
                 return <LoginForm />;
             default:
                 return (
-                    <View>
+                    <View style={styles.spinnerStyle}>
                         <Spinner size="large" />
                     </View>
                 );
@@ -43,12 +43,22 @@ class App extends Component {
 
     render() {
         return (
-            <View>
+            <View style={{ flex: 1 }}>
                 <Header headerText="Authentication" />
                 {this.renderContent()}
             </View>
         );
     }
 }
+
+const styles = {
+    spinnerStyle: {
+        flexDirection: 'row',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+};
+
 
 export default App;
